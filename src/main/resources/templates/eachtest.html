@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org"> <!-- 타임리프 선언 -->
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<span th:each="dto, status:${memberDtos}">
+		<p th:text="${dto.name}"></p>
+		<p th:text="${dto.age}"></p>			
+	</span>
+	
+</body>
+</html>
