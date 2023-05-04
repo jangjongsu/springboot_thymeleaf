@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org"> <!-- 타임리프 선언 -->
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/content.css}">
+<script type="text/javascript" src="/js/vali.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>안녕하세요! 저는 타임리프 입니다.</h1>
+	<span class="hellotext" th:text="${data}"></span><br>
+	<img th:src="@{/img/cat.jpg}"><br>
+	회원 이름 : <span th:text="${memberDto.name}"/><br>
+	회원 나이 : <span th:text="${memberDto.age}"/><br>
+	
+	
+</body>
+</html>
